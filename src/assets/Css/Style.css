@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap");
+:root {
+  --backgrondDarker: #0b051d;
+  --color: #6131df;
+  --fontH: "Heebo", sans-serif;
+  --fontR: "Rubik", sans-serif;
+  --textColor: #ffffff;
+  --p80: 80px 0;
+  --widht100: 100%;
+  --fontsize60: 60px;
+  --fontsize45: 45px;
+  --fontsize25: 25px;
+  --fontsize17: 17px;
+}
+/*! END ROOT &F0NT */
+/* Start Home */
+h1 {
+  font-family: var(--font);
+}
+.Bodyy {
+  background-color: var(--backgrondDarker);
+  overflow: hidden;
+}
+
+/* Home Sec */
+.SecHome {
+  padding: var(--p80);
+  width: var(--widht100);
+}
+.DivRight {
+  margin-top: 50px;
+}
+.DivRight h4 {
+  font-family: var(--fontR);
+  font-size: 30px;
+  line-height: 36px;
+  --tw-text-opacity: 1;
+  color: rgb(97 49 223 / var(--tw-text-opacity));
+  font-style: italic;
+  margin-left: 10px;
+}
+.DivRight h1 {
+  font-family: var(--fontH);
+  font-weight: 700;
+  font-size: var(--fontsize60);
+  line-height: 90px;
+  color: var(--textColor);
+}
+.DivRight h2 {
+  font-family: var(--fontH);
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--color);
+}
+.DivRight h2 span {
+  color: var(--textColor);
+  margin-left: 5px;
+}
+.DivRight p {
+  font-family: var(--fontR);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #e2e8f0;
+  width: 100%;
+}
+.prghrap {
+  width: 80%;
+}
+.BTNNSITE {
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  width: 220px;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--fontR);
+  color: var(--textColor);
+  transition: 0.5s all;
+  overflow: hidden;
+}
+/* download ICone */
+.DivRight.downloadI {
+  background-color: #efebeb;
+  color: var(--color);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541),
+    0 6px 20px 0 rgba(0, 0, 0, 0.541);
+  transition: 0.5s all;
+  margin-left: 10px;
+}
+.BTNNSITE:hover {
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  box-shadow: 7px 5px 56px -14px var(--color);
+  border: 3px solid var(--color);
+}
+.BTNNSITE:hover .downloadI {
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  box-shadow: 0 4px 8px 0 rgba(98, 49, 223, 0.541),
+    0 6px 20px 0 rgba(98, 49, 223, 0.541);
+}
+.LogoHome {
+  max-width: 80%;
+  box-shadow: 7px 5px 56px -14px var(--color);
+  border-radius: 8px;
+}
+.DivLogoHome {
+  position: relative;
+}
+.LogoSkil {
+  width: 80px;
+  box-shadow: 7px 5px 56px -14px var(--color);
+  border-radius: 8px;
+  display: block;
+}
+.NexLogo {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  animation: Next 5s infinite;
+}
+
+@keyframes Next {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.ReactLogo {
+  position: absolute;
+  bottom: 10px;
+  right: 90px;
+
+  animation: React 5s infinite;
+}
+
+@keyframes React {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.JsLogo {
+  position: absolute;
+  bottom: 10px;
+  left: -20px;
+
+  animation: Js 5s infinite;
+}
+
+@keyframes Js {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 767px) {} */
+  .SecHome {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .DivRight h1 {
+    font-family: var(--fontH);
+    font-weight: 700;
+    font-size: var(--fontsize45);
+    line-height: 90px;
+    color: var(--textColor);
+  }
+  .DivRight p {
+    font-family: var(--fontR);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #e2e8f0;
+    width: 100%;
+  }
+  .prghrap {
+    width: 100%;
+  }
+  .LogoHome {
+    max-width: 70%;
+    box-shadow: 7px 5px 56px -14px var(--color);
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+  .DivRight {
+    margin-top: 0px;
+  }
+  .LogoSkil {
+    width: 80px;
+    box-shadow: 7px 5px 56px -14px var(--color);
+    border-radius: 8px;
+    display: none;
+  }
+  .DivRight h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 2000px) and (min-width: 1399px) {
+  .ReactLogo {
+    position: absolute;
+    bottom: 10px;
+    left: 440px;
+
+    animation: React 5s infinite;
+  }
+}
+
+/* End Home */
+
+/* Start services */
+.SecServices {
+  width: var(--widht100);
+  padding: var(--p80);
+}
+.Titel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.TitleName {
+  font-family: var(--fontR);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.TitleDes {
+  font-family: var(--fontH);
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: bold;
+  color: var(--textColor);
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Card */
+.CardService {
+  width: 100%;
+  height: 90%;
+  background-color: rgb(23, 11, 57);
+  padding: 30px 25px;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 7px 5px 56px -14px black;
+  transition: 0.5s all;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.CardService:hover {
+  box-shadow: 7px 5px 56px -14px var(--color);
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+}
+.ImgCrad {
+  width: 80px;
+  margin-bottom: 15px;
+  transition: 0.5s all;
+}
+.ImgCradd {
+  width: 80px;
+  margin-bottom: 15px;
+  display: none;
+  transition: 0.5s all;
+}
+.CardService:hover .ImgCradd {
+  display: block;
+}
+.CardService:hover .ImgCrad {
+  display: none;
+}
+.NameJob {
+  font-family: var(--fontH);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  color: var(--textColor);
+  margin-bottom: 15px;
+}
+.CardDes {
+  font-family: var(--fontR);
+  font-size: 17px;
+  line-height: 26px;
+  color: #e2e8f0;
+}
+
+@media screen and (max-width: 992px) {
+  .TitleDes {
+    font-family: var(--fontH);
+    font-size: var(--fontsize45);
+    line-height: 58px;
+    font-weight: bold;
+    color: var(--textColor);
+  }
+}
+/* End Services */
+
+/* Start About */
+.SecAbout {
+  width: var(--widht100);
+  padding: var(--p80);
+}
+
+.TitleNameSec {
+  font-family: var(--fontH);
+  font-size: 35px;
+  color: var(--textColor);
+  font-weight: 700;
+  line-height: 50px;
+  margin-top: 5px;
+}
+.DesCrip {
+  font-family: var(--fontR);
+  font-size: 17px;
+  line-height: 28px;
+  color: #bababa;
+  font-weight: 400;
+  margin: 15px 0;
+  width: 500px;
+}
+
+.BTNNSITEB1 {
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  width: 220px;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--fontR);
+  color: var(--textColor);
+  transition: 0.5s all;
+  overflow: hidden;
+  margin-top: 15px;
+  
+}
+/* download ICone */
+.downloadI {
+  background-color: #efebeb;
+  color: var(--color);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.541),
+    0 6px 20px 0 rgba(0, 0, 0, 0.541);
+  transition: 0.3s all;
+}
+.BTNNSITEB1:hover {
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  box-shadow: 7px 5px 56px -14px var(--color);
+  border: 3px double var(--color);
+}
+.BTNNSITEB1:hover .downloadI {
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  box-shadow: 0 4px 8px 0 rgba(98, 49, 223, 0.541),
+    0 6px 20px 0 rgba(98, 49, 223, 0.541);
+}
+.LogoAbout {
+  max-width: 80%;
+  border-radius: 8px;
+  border: 3px double var(--color);
+  position: sticky;
+z-index: 2;
+}
+.AboutRight {
+  position: relative;
+}
+.ShapeAbout {
+  max-width: 40%;
+  position: absolute;
+  bottom:-80px;
+  left: -80px;
+z-index: 1;
+animation: ShapeAboutt 5s infinite;
+display: block;
+}
+
+@keyframes ShapeAboutt {
+  0% {
+    bottom: -80px;
+  }
+  50% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: -80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 767px) {} */
+  .SecAbout {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .DiveLiftAbout{
+  margin-bottom: 50px;
+  }
+  .ShapeAbout {
+    max-width: 40%;
+    position: absolute;
+    bottom:-80px;
+    left: -80px;
+  z-index: 1;
+  animation: ShapeAboutt 5s infinite;
+  display: none;
+  }
+  .DesCrip {
+    font-family: var(--fontR);
+    font-size: 17px;
+    line-height: 28px;
+    color: #bababa;
+    font-weight: 400;
+    margin: 15px 0;
+    width: 100%;
+  }
+}

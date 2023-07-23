@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600;700;800;900&family=Rubik:wght@400;500;600;700;800&display=swap");
+:root {
+  --backgrondDarker: #0b051d;
+  --color: rgb(97, 49, 223);
+  --fontH: "Heebo", sans-serif;
+  --fontR: "Rubik", sans-serif;
+  --textColor: #ffffff;
+}
+.Bodyy {
+  background-color: var(--backgrondDarker);
+}
+.NavBarr {
+  background-color: var(--backgrondDarker);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  height: 100px;
+  padding-left: 35px;
+  padding-right: 50px;
+}
+.LogoNav {
+  width: 100px;
+}
+.Linkes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: block;
+}
+.Linkes a {
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--fontR);
+  color: var(--textColor);
+  transition: 0.5s all;
+}
+.linko {
+  margin-left: 25px;
+  padding-bottom: 5px;
+  transition: 0.5s all;
+}
+.Linkes a:hover {
+  color: var(--color);
+}
+.BTNN {
+  background-color: var(--color);
+  border: none;
+  outline: none;
+  width: 160px;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--fontR);
+  color: var(--textColor);
+  margin-left: 25px;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+/* download ICone */
+.downloadI{
+  background-color: #EFEBEB;
+  color:var(--color) ;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s all;
+  margin-left: 10px;
+
+}
+.BTNN:hover {
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 2px solid var(--color);
+  box-shadow: 7px 5px 56px -14px var(--color);
+
+}
+
+
+/* Menu bar */
+.menuBarrr {
+  display: none;
+}
+/* menuBarrr btn btn-primary */
+.offcanvas-body {
+  background-color: var(--backgrondDarker);
+  color: var(--textColor);
+  position: relative;
+}
+.offcanvas-header {
+  background-color: var(--backgrondDarker);
+  color: var(--textColor);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoMenu {
+  width: 120px;
+  margin-right: 100px;
+}
+
+.LinkesMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  display: block;
+}
+.LinkesMenu a {
+  text-decoration: none;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: var(--fontR);
+  color: var(--textColor);
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.LinkesMenu .BTNN{
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+  text-align: center;
+  margin: auto;
+  
+}
+.linkoBtn{
+  margin-bottom: 30px;
+}
+.BTNNMenu{
+  background-color: rgb(97, 49, 223);
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: var(--textColor);
+  transition: 0.5s all;
+
+}
+.BTNNMenu:hover {
+  background: rgba(11, 5, 29, 0.25);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 2px solid var(--color);
+  box-shadow: 7px 5px 56px -14px var(--color);
+
+}
+
+@media screen and (max-width: 992px) {
+  .Linkes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: none;
+  }
+  .menuBarrr {
+    display: block;
+  }
+}

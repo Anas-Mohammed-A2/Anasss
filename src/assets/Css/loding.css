@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --backgrondDarker: #0b051d;
+  --color: #6131df;
+  --font: "El Messiri", sans-serif;
+  --textColor: #ffffff;
+}
+/* START CSS OF LODING */
+.loader {
+  display: block;
+  position: relative;
+  height: 15px;
+  width: 300px;
+  border: 1px solid var(--color);
+  border-radius: 10px;
+  overflow: hidden;
+  bottom: 40px;
+}
+.loader::after {
+  content: "";
+  width: 40%;
+  height: 100%;
+  background: var(--color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+
+.preloaderr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--backgrondDarker);
+  position: relative;
+}
+.imglogo {
+  width: 250px;
+  margin-left: 30px;
+}
+/* END CSS OF LODING */
